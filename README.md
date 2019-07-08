@@ -8,7 +8,7 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
 - TON 中文白皮书：https://mp.weixin.qq.com/s/WLlD088acBDfjUM4bCEd0A 译者：[@吴泰_tooz](https://mp.weixin.qq.com/s/WLlD088acBDfjUM4bCEd0A )
 - Github：https://github.com/opeakt/TONBUS
 
-##时间线：
+## 时间线：
 
 - 2019年10月31日 前上线 TON 主网
 - 2019年7月10日，日本 Liquid 交易所进行 IOU/IEO（个人投资者份额转让）；转让价格：3.5美金
