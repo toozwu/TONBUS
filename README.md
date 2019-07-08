@@ -8,6 +8,7 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
 - TON 中文社区 微博：[@TON中文社区](https://weibo.com/sharing2)
 - TON 中文白皮书：https://mp.weixin.qq.com/s/WLlD088acBDfjUM4bCEd0A 译者：[@吴泰_tooz](https://mp.weixin.qq.com/s/WLlD088acBDfjUM4bCEd0A )
 - Github：https://github.com/opeakt/TONBUS
+看到这里请记得给我们点个 Star ✨ 哦～～谢谢
 
 ## 时间线：
 
