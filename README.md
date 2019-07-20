@@ -19,6 +19,27 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
 - 2018年1月第二笔投资，1.03USD价格半公开+数字货币投资机构。
 - 2017年12月第一笔投资，0.37USD价格，传统机构投资者。
 
+## TONBUS Instruction
+
+ 1. Download TONBUS project from github
+ 2. Start TON test client
+    - ./test-lite-client -C config.json
+ 3. Create a new wallet
+    - under test folder
+    - ./fift -I <source dir>/lite-client/crypto/fift/lib new-wallet.fif 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 以下是原始的 README.md
 
 

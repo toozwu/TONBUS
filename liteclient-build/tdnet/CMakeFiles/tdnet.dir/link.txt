@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libtdnet.a  CMakeFiles/tdnet.dir/td/net/FdListener.cpp.o CMakeFiles/tdnet.dir/td/net/TcpListener.cpp.o CMakeFiles/tdnet.dir/td/net/UdpServer.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libtdnet.a

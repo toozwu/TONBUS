@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libadnllite.a  CMakeFiles/adnllite.dir/adnl-ext-client.cpp.o CMakeFiles/adnllite.dir/adnl-ext-connection.cpp.o CMakeFiles/adnllite.dir/adnl-query.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libadnllite.a

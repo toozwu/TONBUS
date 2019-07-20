@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexzhang/Documents/TON/official/lite-client/third-party/crc32c/src/crc32c_arm64.cc
+./crc32c_arm64.h
+/Users/alexzhang/Documents/TON/official/lite-client/third-party/crc32c/src/crc32c_arm64.h
+cstddef
+-
+cstdint
+-
+./crc32c_internal.h
+/Users/alexzhang/Documents/TON/official/lite-client/third-party/crc32c/src/crc32c_internal.h
+crc32c/crc32c_config.h
+/Users/alexzhang/Documents/TON/official/lite-client/third-party/crc32c/src/crc32c/crc32c_config.h
+arm_acle.h
+-
+arm_neon.h
+-
+
+/Users/alexzhang/Documents/TON/official/lite-client/third-party/crc32c/src/crc32c_arm64.h
+cstddef
+-
+cstdint
+-
+crc32c/crc32c_config.h
+/Users/alexzhang/Documents/TON/official/lite-client/third-party/crc32c/src/crc32c/crc32c_config.h
+
+/Users/alexzhang/Documents/TON/official/lite-client/third-party/crc32c/src/crc32c_internal.h
+cstddef
+-
+cstdint
+-
+
+third-party/crc32c/include/crc32c/crc32c_config.h
+

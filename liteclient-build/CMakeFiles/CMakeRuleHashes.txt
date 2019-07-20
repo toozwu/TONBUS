@@ -1,0 +1,8 @@
+# Hashes of file build rules.
+e6fe1f155cfe412729665cf451c31626 /Users/alexzhang/Documents/TON/official/lite-client/tdutils/generate/auto/extension_to_mime_type.cpp
+6328b11e9a76cfbe47cad37797a67ceb /Users/alexzhang/Documents/TON/official/lite-client/tdutils/generate/auto/mime_type_to_extension.cpp
+370562a73b61fb366c5ff1d9974bc722 /Users/alexzhang/Documents/TON/official/lite-client/tdutils/generate/auto/mime_type_to_extension.gperf
+eb195a811073a3b9b0a9dd6a2275973d CMakeFiles/prepare_cross_compiling
+643daab1768195bc3e959e92d259aa6b crypto/CMakeFiles/tlb_generate_block
+cfe6354dcde14b049eac914dbd832b06 tdutils/generate/CMakeFiles/tdmime_auto
+c9afe0f33a9442bc18ede26a421b2e67 tl/generate/CMakeFiles/tl_generate_common

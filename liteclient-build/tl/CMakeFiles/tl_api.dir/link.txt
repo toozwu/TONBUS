@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libtl_api.a  CMakeFiles/tl_api.dir/generate/auto/tl/ton_api.cpp.o CMakeFiles/tl_api.dir/generate/auto/tl/ton_api_json.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libtl_api.a

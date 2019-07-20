@@ -1,0 +1,221 @@
+Performing C++ SOURCE FILE Test HAVE_ARM64_CRC32C failed with the following output:
+Change Dir: /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_27a82/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_27a82.dir/build.make CMakeFiles/cmTC_27a82.dir/build
+Building CXX object CMakeFiles/cmTC_27a82.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -Wall -Wextra -Werror -fno-exceptions -fno-rtti -DHAVE_ARM64_CRC32C  -march=armv8-a+crc+crypto -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -fPIE   -o CMakeFiles/cmTC_27a82.dir/src.cxx.o -c /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx
+error: unknown target CPU 'armv8-a+crc+crypto'
+note: valid target CPU values are: nocona, core2, penryn, bonnell, atom, silvermont, slm, goldmont, goldmont-plus, tremont, nehalem, corei7, westmere, sandybridge, corei7-avx, ivybridge, core-avx-i, haswell, core-avx2, broadwell, skylake, skylake-avx512, skx, cannonlake, icelake-client, icelake-server, knl, knm, k8, athlon64, athlon-fx, opteron, k8-sse3, athlon64-sse3, opteron-sse3, amdfam10, barcelona, btver1, btver2, bdver1, bdver2, bdver3, bdver4, znver1, x86-64
+make[1]: *** [CMakeFiles/cmTC_27a82.dir/src.cxx.o] Error 1
+make: *** [cmTC_27a82/fast] Error 2
+
+
+Source file was:
+
+#include <arm_acle.h>
+#include <arm_neon.h>
+
+int main() {
+  __crc32cb(0, 0); __crc32ch(0, 0); __crc32cw(0, 0); __crc32cd(0, 0);
+  vmull_p64(0, 0);
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_STRONG_GETAUXVAL failed with the following output:
+Change Dir: /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_18fe2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_18fe2.dir/build.make CMakeFiles/cmTC_18fe2.dir/build
+Building CXX object CMakeFiles/cmTC_18fe2.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -Wall -Wextra -Werror -fno-exceptions -fno-rtti -DHAVE_STRONG_GETAUXVAL -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -fPIE   -o CMakeFiles/cmTC_18fe2.dir/src.cxx.o -c /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx
+In file included from /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx:2:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:28:2: error: "ACLE intrinsics support not enabled."
+#error "ACLE intrinsics support not enabled."
+ ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:49:3: error: use of undeclared identifier '__builtin_arm_wfi'; did you mean '__builtin_dwarf_cfa'?
+  __builtin_arm_wfi();
+  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:49:3: note: '__builtin_dwarf_cfa' declared here
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:53:3: error: use of undeclared identifier '__builtin_arm_wfe'; did you mean '__builtin_dwarf_cfa'?
+  __builtin_arm_wfe();
+  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:49:3: note: '__builtin_dwarf_cfa' declared here
+  __builtin_arm_wfi();
+  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:57:3: error: use of undeclared identifier '__builtin_arm_sev'
+  __builtin_arm_sev();
+  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:61:3: error: use of undeclared identifier '__builtin_arm_sevl'
+  __builtin_arm_sevl();
+  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:65:3: error: use of undeclared identifier '__builtin_arm_yield'; did you mean '__builtin_ia32_xend'?
+  __builtin_arm_yield();
+  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:57:3: note: '__builtin_ia32_xend' declared here
+  __builtin_arm_sev();
+  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:78:9: error: use of undeclared identifier '__builtin_arm_ldrex'
+    v = __builtin_arm_ldrex(__p);
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:79:10: error: use of undeclared identifier '__builtin_arm_strex'
+  while (__builtin_arm_strex(__x, __p));
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:108:3: error: use of undeclared identifier '__builtin_arm_nop'; did you mean '__builtin_coro_noop'?
+  __builtin_arm_nop();
+  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:108:3: note: '__builtin_coro_noop' declared here
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:205:10: error: use of undeclared identifier '__builtin_arm_rbit'
+  return __builtin_arm_rbit(__t);
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_acle.h:214:10: error: use of undeclared identifier '__builtin_arm_rbit64'
+  return __builtin_arm_rbit64(__t);
+         ^
+In file included from /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx:3:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_neon.h:28:2: error: "NEON support not enabled"
+#error "NEON support not enabled"
+ ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_neon.h:48:24: error: 'neon_vector_type' attribute is not supported for this target
+typedef __attribute__((neon_vector_type(8))) int8_t int8x8_t;
+                       ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_neon.h:49:24: error: 'neon_vector_type' attribute is not supported for this target
+typedef __attribute__((neon_vector_type(16))) int8_t int8x16_t;
+                       ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_neon.h:50:24: error: 'neon_vector_type' attribute is not supported for this target
+typedef __attribute__((neon_vector_type(4))) int16_t int16x4_t;
+                       ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_neon.h:51:24: error: 'neon_vector_type' attribute is not supported for this target
+typedef __attribute__((neon_vector_type(8))) int16_t int16x8_t;
+                       ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_neon.h:52:24: error: 'neon_vector_type' attribute is not supported for this target
+typedef __attribute__((neon_vector_type(2))) int32_t int32x2_t;
+                       ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_neon.h:53:24: error: 'neon_vector_type' attribute is not supported for this target
+typedef __attribute__((neon_vector_type(4))) int32_t int32x4_t;
+                       ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/arm_neon.h:54:24: error: 'neon_vector_type' attribute is not supported for this target
+typedef __attribute__((neon_vector_type(1))) int64_t int64x1_t;
+                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make[1]: *** [CMakeFiles/cmTC_18fe2.dir/src.cxx.o] Error 1
+make: *** [cmTC_18fe2/fast] Error 2
+
+
+Source file was:
+
+#include <arm_acle.h>
+#include <arm_neon.h>
+#include <sys/auxv.h>
+
+int main() {
+  getauxval(AT_HWCAP);
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_WEAK_GETAUXVAL failed with the following output:
+Change Dir: /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_18751/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_18751.dir/build.make CMakeFiles/cmTC_18751.dir/build
+Building CXX object CMakeFiles/cmTC_18751.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -Wall -Wextra -Werror -fno-exceptions -fno-rtti -DHAVE_WEAK_GETAUXVAL -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -fPIE   -o CMakeFiles/cmTC_18751.dir/src.cxx.o -c /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_18751
+/usr/local/Cellar/cmake/3.15.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18751.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Wall -Wextra -Werror -fno-exceptions -fno-rtti -DHAVE_WEAK_GETAUXVAL -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_18751.dir/src.cxx.o  -o cmTC_18751 
+Undefined symbols for architecture x86_64:
+  "getauxval(unsigned long)", referenced from:
+      _main in src.cxx.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_18751] Error 1
+make: *** [cmTC_18751/fast] Error 2
+
+
+Source file was:
+
+unsigned long getauxval(unsigned long type) __attribute__((weak));
+#define AT_HWCAP 16
+
+int main() {
+  getauxval(AT_HWCAP);
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2 failed with the following output:
+Change Dir: /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_17e66/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_17e66.dir/build.make CMakeFiles/cmTC_17e66.dir/build
+Building CXX object CMakeFiles/cmTC_17e66.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -DHAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2  -Wimplicit-fallthrough=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -fPIE   -Wimplicit-fallthrough=2 -o CMakeFiles/cmTC_17e66.dir/src.cxx.o -c /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_17e66
+/usr/local/Cellar/cmake/3.15.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17e66.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -DHAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2  -Wimplicit-fallthrough=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_17e66.dir/src.cxx.o  -o cmTC_17e66 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WDUPLICATED_BRANCHES failed with the following output:
+Change Dir: /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9bff0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9bff0.dir/build.make CMakeFiles/cmTC_9bff0.dir/build
+Building CXX object CMakeFiles/cmTC_9bff0.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WDUPLICATED_BRANCHES  -Wduplicated-branches -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -fPIE   -Wduplicated-branches -o CMakeFiles/cmTC_9bff0.dir/src.cxx.o -c /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_9bff0
+/usr/local/Cellar/cmake/3.15.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bff0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WDUPLICATED_BRANCHES  -Wduplicated-branches -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9bff0.dir/src.cxx.o  -o cmTC_9bff0 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WDUPLICATED_COND failed with the following output:
+Change Dir: /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_79a41/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_79a41.dir/build.make CMakeFiles/cmTC_79a41.dir/build
+Building CXX object CMakeFiles/cmTC_79a41.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WDUPLICATED_COND  -Wduplicated-cond -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -fPIE   -Wduplicated-cond -o CMakeFiles/cmTC_79a41.dir/src.cxx.o -c /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wduplicated-cond'; did you mean '-Wduplicate-enum'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond'; did you mean '-Wduplicate-enum'? [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_79a41
+/usr/local/Cellar/cmake/3.15.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79a41.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WDUPLICATED_COND  -Wduplicated-cond -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_79a41.dir/src.cxx.o  -o cmTC_79a41 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WALLOC_ZERO failed with the following output:
+Change Dir: /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_49987/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_49987.dir/build.make CMakeFiles/cmTC_49987.dir/build
+Building CXX object CMakeFiles/cmTC_49987.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WALLOC_ZERO  -Walloc-zero -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -fPIE   -Walloc-zero -o CMakeFiles/cmTC_49987.dir/src.cxx.o -c /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Walloc-zero'; did you mean '-Wdiv-by-zero'? [-Wunknown-warning-option]
+warning: unknown warning option '-Walloc-zero'; did you mean '-Wdiv-by-zero'? [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_49987
+/usr/local/Cellar/cmake/3.15.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49987.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WALLOC_ZERO  -Walloc-zero -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_49987.dir/src.cxx.o  -o cmTC_49987 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WLOGICAL_OP failed with the following output:
+Change Dir: /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1169c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_1169c.dir/build.make CMakeFiles/cmTC_1169c.dir/build
+Building CXX object CMakeFiles/cmTC_1169c.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WLOGICAL_OP  -Wlogical-op -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -fPIE   -Wlogical-op -o CMakeFiles/cmTC_1169c.dir/src.cxx.o -c /Users/alexzhang/Documents/TON/official/liteclient-build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_1169c
+/usr/local/Cellar/cmake/3.15.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1169c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -march=native -std=c++14 -fno-omit-frame-pointer -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WLOGICAL_OP  -Wlogical-op -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1169c.dir/src.cxx.o  -o cmTC_1169c 
+
+
+Source file was:
+int main() { return 0; }

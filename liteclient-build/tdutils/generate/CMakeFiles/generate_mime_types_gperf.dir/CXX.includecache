@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexzhang/Documents/TON/official/lite-client/tdutils/generate/generate_mime_types_gperf.cpp
+algorithm
+-
+cassert
+-
+cstddef
+-
+fstream
+-
+iostream
+-
+map
+-
+string
+-
+tuple
+-
+utility
+-
+vector
+-
+

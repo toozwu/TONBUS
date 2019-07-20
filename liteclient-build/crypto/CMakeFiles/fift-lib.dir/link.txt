@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libfift.a  CMakeFiles/fift-lib.dir/fift/Dictionary.cpp.o CMakeFiles/fift-lib.dir/fift/Fift.cpp.o CMakeFiles/fift-lib.dir/fift/IntCtx.cpp.o CMakeFiles/fift-lib.dir/fift/SourceLookup.cpp.o CMakeFiles/fift-lib.dir/fift/utils.cpp.o CMakeFiles/fift-lib.dir/fift/words.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libfift.a

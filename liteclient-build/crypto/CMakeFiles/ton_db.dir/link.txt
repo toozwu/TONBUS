@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libton_db.a  CMakeFiles/ton_db.dir/vm/db/DynamicBagOfCellsDb.cpp.o CMakeFiles/ton_db.dir/vm/db/CellStorage.cpp.o CMakeFiles/ton_db.dir/vm/db/TonDb.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libton_db.a
