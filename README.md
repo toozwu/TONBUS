@@ -21,11 +21,80 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
 - 2018年1月第二笔投资，1.03USD价格半公开+数字货币投资机构。
 - 2017年12月第一笔投资，0.37USD价格，传统机构投资者。
 
-## TONBUS Instruction 
+## TONBUS Instruction
+### Installation
+### If you are windows user, you can build docker container using our dockerfile
+ 1. Download docker desktop
+ 2. Download TONBUS project from our repository (please star us :P if you like it)
+ 3. Enter TONBUS main directory
+ 4. Run the following command in your powershell
+    build docker images
+    ```
+    docker build . -t tonbus
+    ```
 
- 1. Download TONBUS project from github
- 2. Start TON test client
-    - ./test-lite-client -C config.json
+    find the image id you just built
+    ```
+    docker images
+    ```
+
+    enter your docker container
+    ```
+    docker run -it -v "$(pwd):/data" <docker image id>
+    ```
+
+    set fift env variable
+    ```
+    export FIFTPATH=/data/lite-client/crypto/fift/lib
+    ```
+
+### If you are Mac user, you still use docker or your local system
+ 1. Download TONBUS project from our repository (please star us :P if you like it)
+ 2. Enter TONBUS main directory
+ 3. Run the following command in your powershell
+    set fift env variable
+    ```
+    export FIFTPATH=<source path>/lite-client/crypto/fift/lib
+    ```
+
+## Test Network Instruction
+ 1. Enter test-network-run directory
+ 2. Start TON client
+    ```
+    ./lite-client -C ton-lite-client-test1.config.json
+    ```
  3. Create a new wallet
-    - under test folder
-    - ./fift -I <source dir>/lite-client/crypto/fift/lib new-wallet.fif 
+    Pre-compile wallet code
+    ```
+    ./fift new-wallet.fif
+    ```
+
+    Deploy smart contract
+    ```
+    ./lite-client -C ton-lite-client-test1.config.json
+    sendfile new-wallet-query.boc
+    last
+    getaccount -1:<your account address>
+    ```
+
+ 4. Get some grams from faucet
+    Edit testgiver.fif to your account address and faucet sequence number
+    Pre-compile test giver code
+    ```
+    ./fift testgiver.fif
+    ./lite-client -C ton-lite-client-test1.config.json
+    sendfile wallet-query.boc
+    last
+    getaccount -1:8156775b79325e5d62e742d9b96c30b6515a5cd2f1f64c5da4b193c03f070e0d
+    getaccount -1:<your account address>
+    ```
+
+ 5. Transfer some funds to other account
+    Pre-compile transaction code
+    ```
+    ./fift send-transaction.fif
+    ./lite-client -C ton-lite-client-test1.config.json
+    sendfile new-wallet-send-transaction-query.boc
+    last
+    getaccount -1:<your account address>
+    ```      
