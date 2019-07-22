@@ -28,6 +28,7 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
  2. Download TONBUS project from our repository (please star us :P if you like it)
  3. Enter TONBUS main directory
  4. Run the following command in your powershell
+
     build docker images
     ```
     docker build . -t tonbus
@@ -52,6 +53,7 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
  1. Download TONBUS project from our repository (please star us :P if you like it)
  2. Enter TONBUS main directory
  3. Run the following command in your powershell
+
     set fift env variable
     ```
     export FIFTPATH=<source path>/lite-client/crypto/fift/lib
@@ -78,7 +80,9 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
     ```
 
  4. Get some grams from faucet
+
     Edit testgiver.fif to your account address and faucet sequence number
+
     Pre-compile test giver code
     ```
     ./fift testgiver.fif
@@ -90,6 +94,7 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
     ```
 
  5. Transfer some funds to other account
+
     Pre-compile transaction code
     ```
     ./fift send-transaction.fif
@@ -97,4 +102,4 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
     sendfile new-wallet-send-transaction-query.boc
     last
     getaccount -1:<your account address>
-    ```      
+    ```
