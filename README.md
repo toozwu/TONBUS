@@ -14,15 +14,13 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
 
 - 2019年10月31日 前上线 TON 主网
 - 今天
-- 2019年8月7日，TON 社区和 Lbank 达成合作。
-- 2019年8月6日，TON 社区和 Bgogo 达成合作。
+- 2019年8月6日，TON 社区和 Bgogo 社区达成合作。
 - 2019年8月3日，TON 社区和无涯社区的AMA about TON whitepaper.
 - 2019年7月29日，TON 社区和 CoinEx 社区的AMA about TON whitepaper.
 - 2019年7月20日，TON 社区和 CoinBene 社区的AMA about TON whitepaper.
 - 2019年7月15日，TON 社区和 TONBUS 社区的AMA about TON whitepaper.
 - 2019年7月10日，TON 社区和 Real Satoshi 社区的AMA about TON whitepaper.
-- 2019年7月10日，BiHODL 交易所 Listing GRAM。TON 社区和 BiHODL 社区的AMA about TON whitepaper.
-- 2019年
+- 2019年7月10日，TON 社区和 BiHODL 社区的AMA about TON whitepaper.
 - 2019年7月10日，日本 Liquid 交易所进行 IOU/IEO（个人投资者份额转让）；转让价格：3.5美金
 - 2019年7月8日，BISS 币市交易所 Listing GRAM。TON 社区和 BISS 社区的AMA about TON whitepaper.
 - 2019年4月轻节点代码开放，邮件邀请内测。
