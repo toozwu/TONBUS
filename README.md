@@ -13,7 +13,9 @@ Telegram Open Network（TON） 是 Telegram 的区块链项目。官方通过邮
 ## TON 时间线：
 
 - 2019年10月31日 前上线 TON 主网
+- 2019年9月1日 公测
 - 今天
+- 2019年8月10日，TON 社区在上海举办第一场 MEETUP。
 - 2019年8月6日，TON 社区和 Bgogo 社区达成合作。
 - 2019年8月3日，TON 社区和无涯社区的AMA about TON whitepaper.
 - 2019年7月29日，TON 社区和 CoinEx 社区的AMA about TON whitepaper.
